@@ -55,7 +55,7 @@ func main() {
 	repo := &VesselRepository{vessels}
 
 	srv := micro.NewService(
-		micro.Name("shippy.service.vessel"),
+		micro.Name("vessel.service"),
 	)
 
 	srv.Init()
