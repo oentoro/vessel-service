@@ -1,8 +1,9 @@
-# vessel-service/Dockerfile
-FROM ubuntu:latest
+FROM alpine:latest
 
-RUN mkdir /app
+RUN apk add --no-cache \
+        libc6-compat
 WORKDIR /app
-ADD vessel-service /app/vessle-service 
+
+ADD vessel-service /app/vessel-service 
 
 CMD ["./vessel-service"]
