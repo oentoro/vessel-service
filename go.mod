@@ -10,9 +10,11 @@ require (
 	github.com/hashicorp/golang-lru v0.5.3 // indirect
 	github.com/lucas-clemente/quic-go v0.12.0 // indirect
 	github.com/micro/go-micro v1.8.2
+	github.com/micro/protobuf v0.0.0-20180321161605-ebd3be6d4fdb // indirect
 	github.com/mwitkow/go-conntrack v0.0.0-20190716064945-2f068394615f // indirect
 	github.com/prometheus/client_golang v1.1.0 // indirect
 	golang.org/x/mobile v0.0.0-20190806162312-597adff16ade // indirect
+	golang.org/x/net v0.0.0-20190724013045-ca1201d0de80
 	golang.org/x/sys v0.0.0-20190804053845-51ab0e2deafa // indirect
 	golang.org/x/tools v0.0.0-20190806215303-88ddfcebc769 // indirect
 	google.golang.org/genproto v0.0.0-20190801165951-fa694d86fc64 // indirect

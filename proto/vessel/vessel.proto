@@ -1,11 +1,9 @@
-// shippy-service-vessel/proto/vessel/vessel.proto
 syntax = "proto3";
 
 package vessel;
 
 service VesselService {
   rpc FindAvailable(Specification) returns (Response) {}
-  rpc Create(Vessel) returns (Response) {}
 }
 
 message Vessel {
