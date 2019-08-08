@@ -5,8 +5,8 @@ import (
 	"errors"
 	"fmt"
 
-	pb "github.com/oentoro/vessel-service/proto/vessel"
 	"github.com/micro/go-micro"
+	pb "github.com/oentoro/vessel-service/proto/vessel"
 )
 
 type Repository interface {
@@ -54,7 +54,7 @@ func main() {
 	repo := &VesselRepository{vessels}
 
 	srv := micro.NewService(
-		micro.Name("go.micro.srv.vessel"),
+		micro.Name("vessel.service"),
 		micro.Version("latest"),
 	)
 

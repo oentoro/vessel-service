@@ -1,7 +1,7 @@
 build:
 	protoc -I. --go_out=plugins=micro:. \
 		proto/vessel/vessel.proto
-	go build
+	GOOS=linux GOARCH=amd64 go build
 	docker build -t vessel-service .
 	rm vessel-service
 run:
