@@ -9,10 +9,12 @@ import (
 	pb "github.com/oentoro/vessel-service/proto/vessel"
 )
 
+//Repository - interface for repository
 type Repository interface {
 	FindAvailable(*pb.Specification) (*pb.Vessel, error)
 }
 
+//VesselRepository - vessel repository object
 type VesselRepository struct {
 	vessels []*pb.Vessel
 }
